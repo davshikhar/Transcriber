@@ -35,10 +35,10 @@ export const AudioUploader = () =>{
             <div className="mt-4 p-4 border-2 border-dashed border-gray-400 rounded-lg">
                 <input type="file" accept="audio/*" onChange={handleFileChange}/>
             </div>
-            <button className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Upload and Transcribe</button>
+            <button className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleUpload}>Upload and Transcribe</button>
             <div>
                 <h2 className="font-semibold text-xl mt-6"> Transcription Result:</h2>
-                <p className="mt-2 text-gray-700">Transcribed result will be displayed here.
+                <p className="mt-2 text-gray-700">
                     {transcription ? transcription : "No transcription yet."}
                 </p>
             </div>
